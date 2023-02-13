@@ -1,8 +1,6 @@
 # Getting started
 
-# Getting Started
-
-### Variables
+## Variables
 
 ```bash
 NAME="Bob"
@@ -25,7 +23,7 @@ NAME = "Bob"   # => Error (about space)
 
 </aside>
 
-### Comments
+## Comments
 
 ```bash
 # This is an inline Bash comment.
@@ -47,7 +45,7 @@ If it looks very neat
 
 </aside>
 
-### Functions
+## Functions
 
 ```bash
 #!/usr/bin/env bash
@@ -64,7 +62,7 @@ function get_username() {
 echo "You are $(get_username)"
 ```
 
-### Brace Expansion
+## Brace Expansion
 
 | Example          | Description                    |
 | ---------------- | ------------------------------ |
@@ -77,7 +75,7 @@ echo "You are $(get_username)"
 
 </aside>
 
-### \***\*Special parameters\*\***
+## Special parameters
 
 | Parameter | Description                                                                                          |
 | --------- | ---------------------------------------------------------------------------------------------------- |
@@ -99,7 +97,7 @@ echo "You are $(get_username)"
 
 </aside>
 
-### Example script
+## Example script
 
 ```bash
 #!/usr/bin/env bash
@@ -118,7 +116,7 @@ $ ./helloworld.sh
 $ bash helloworld.sh
 ```
 
-### Conditions
+## Conditions
 
 ```bash
 #!/usr/bin/env bash
@@ -132,7 +130,7 @@ elif [[ -n "$string" ]]; then
 fi
 ```
 
-### Command Substitution
+## Command Substitution
 
 ```bash
 # => I'm Bob

@@ -1,0 +1,108 @@
+site_name: Bash Shell fundamentals
+site_description: Getting started with bash shell scripting
+site_author: "Shubham Singh"
+## https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
+theme:
+  language: en
+  name: material
+  font: false
+  font:
+    text: Nunito
+    code: IBM Plex
+  palette:
+    #scheme: default
+    #primary: black
+    #accent: orange
+    ## Toggle dark mode
+    - scheme: slate
+      primary: indigo
+      accent: purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    ## Toggle light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  icon:
+  logo: assets/icons/shell.png
+  favicon: assets/icons/shell.png
+  # features:
+  #   - navigation.tabs
+  # language: en
+repo_url: https://github.com/shubham-0819/bash-guide
+repo_name: Bash Guide
+remote_branch:
+remote_name:
+docs_dir: docs
+site_dir: public
+use_directory_urls: false
+plugins:
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - search:
+      separator: '[\s\-\.]+'
+  - minify:
+      minify_html: true
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+      title: Table of contents
+      toc_depth: 3
+  - codehilite:
+      guess_lang: False
+      use_pygments: True
+      noclasses: True
+      pygments_style: monokai
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - smarty
+  - sane_lists
+  - admonition
+  - codehilite
+  - extra
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format ""
+  - pymdownx.tabbed
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets:
+      check_paths: true
+
+## Customization
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/shubham_0819
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/shubham-0819
+
+## Page tree
+nav:
+  - Getting started:
+      bash_getting_started.md
