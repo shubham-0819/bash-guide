@@ -28,17 +28,18 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
   icon:
-  logo: assets/icons/shell.png
-  favicon: assets/icons/shell.png
-  # features:
-  #   - navigation.tabs
-  # language: en
+    repo: fontawesome/brands/github
+  logo: assets/icons/shell1.jpg
+  favicon: assets/icons/shell1.jpg
+  features:
+    - navigation.tabs
+  language: en
 repo_url: https://github.com/shubham-0819/bash-guide
 repo_name: Bash Guide
 remote_branch:
 remote_name:
-docs_dir: docs
-site_dir: public
+docs_dir: src
+site_dir: docs
 use_directory_urls: false
 plugins:
   - git-revision-date-localized:
