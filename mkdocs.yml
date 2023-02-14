@@ -36,6 +36,7 @@ theme:
   language: en
 repo_url: https://github.com/shubham-0819/bash-guide
 repo_name: Bash Guide
+edit_uri: edit/main/src/
 remote_branch:
 remote_name:
 docs_dir: src
